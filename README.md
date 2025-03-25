@@ -16,15 +16,26 @@ Setiap game menawarkan pengalaman unik dengan mekanik dan tantangan berbeda.
 ## 🚀 Status Pengembangan  
 💡 **Masih dalam pengembangan!** Feedback dan saran sangat diterima. 🚀  
 
-## Tutorial Instalasi 
-1. Clone repository
-   https://github.com/nrrdwan/MiniGameHub--TripleGame.git
-3. Masuk Unity Hub
-4. Add > Add project form disk
-5. Cari file clonenya
-6. Buka folder MiniGameHub--TripleGame > Pilih folder Project UTS
-7. Selamat mengoprek Unity
+## 🛠 **Cara Instalasi & Menjalankan Proyek**  
+
+### **1️⃣ Clone Repository**  
+Jalankan perintah berikut di terminal atau Git Bash:  
+```sh  
+git clone https://github.com/nrrdwan/MiniGameHub--TripleGame.git  
+```
+
+### **2️⃣ Buka Proyek di Unity Hub**  
+1. **Buka Unity Hub**  
+2. Klik **Add** → **Add project from disk**  
+3. Navigasi ke folder tempat hasil clone disimpan  
+4. Masuk ke folder **MiniGameHub--TripleGame**  
+5. Pilih folder **Project UTS**, lalu klik **Select Folder**  
+
+### **3️⃣ Mulai Mengembangkan**  
+- Setelah proyek terbuka di Unity, pastikan semua aset telah dimuat dengan benar.  
+- Jika ada *missing packages*, instal melalui **Package Manager** di Unity.  
+- 🎮 **Selamat mengoprek & eksplorasi!**  
 
 ---
 
-📌 *Stay tuned for updates!*
+📌 *Stay tuned for updates!* 🚀
