@@ -5,11 +5,11 @@
 .utmp/
 /Project UTS/[Ll]ibrary/
 /Project UTS/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+/Project UTS/[Oo]bj/
+/Project UTS/[Bb]uild/
+/Project UTS/[Bb]uilds/
 /Project UTS/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+/Project UTS/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
