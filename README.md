@@ -18,11 +18,15 @@ Setiap game menawarkan pengalaman unik dengan mekanik dan tantangan berbeda.
 
 ## 🛠 **Cara Instalasi & Menjalankan Proyek**  
 
-### **1️⃣ Clone Repository**  
-Jalankan perintah berikut di terminal atau Git Bash:  
-```sh  
-git clone https://github.com/nrrdwan/MiniGameHub--TripleGame.git  
-```
+### **1️⃣ Clone Repository Melalui GitHub Desktop**  
+1. **Buka GitHub Desktop**  
+2. Klik **File** → **Clone Repository**  
+3. Pilih tab **URL**, lalu tempel link repository berikut:  
+   ```sh  
+   https://github.com/nrrdwan/MiniGameHub--TripleGame.git  
+   ```  
+4. Tentukan lokasi penyimpanan sesuai keinginan  
+5. Klik **Clone** untuk mulai mengunduh repository  
 
 ### **2️⃣ Buka Proyek di Unity Hub**  
 1. **Buka Unity Hub**  
