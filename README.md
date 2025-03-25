@@ -29,7 +29,8 @@ git clone https://github.com/nrrdwan/MiniGameHub--TripleGame.git
 2. Klik **Add** → **Add project from disk**  
 3. Navigasi ke folder tempat hasil clone disimpan  
 4. Masuk ke folder **MiniGameHub--TripleGame**  
-5. Pilih folder **Project UTS**, lalu klik **Select Folder**  
+5. Pilih folder **Project UTS**, lalu klik **Select Folder**
+6. Jika layar belum tampil apa apa buka sceene di folder asset
 
 ### **3️⃣ Mulai Mengembangkan**  
 - Setelah proyek terbuka di Unity, pastikan semua aset telah dimuat dengan benar.  
