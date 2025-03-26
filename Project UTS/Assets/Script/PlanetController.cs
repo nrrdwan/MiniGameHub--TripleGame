@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlanetController : MonoBehaviour
 {
-    public float zoomSpeed = 2f; // Kecepatan zoom
-    public float minScale = 0.5f; // Skala minimum planet
-    public float maxScale = 3f; // Skala maksimum planet
+    public float zoomSpeed = 40f; // Kecepatan zoom
+    public float minScale = 10f; // Skala minimum planet
+    public float maxScale = 90f; // Skala maksimum planet
 
     private Vector3 lastMousePosition;
 
