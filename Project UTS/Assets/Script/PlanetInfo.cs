@@ -4,86 +4,73 @@ using System.Collections;
 
 public class PlanetInfo : MonoBehaviour
 {
-    public GameObject[] infoImages; // Array untuk 9 gambar
-    private bool isImagesVisible = false; // Status apakah gambar ditampilkan
+    public GameObject infoImage; // Satu gambar saja
+    private bool isImageVisible = false; // Status apakah gambar ditampilkan
     public PlanetController planetController; // Referensi ke PlanetController
     public Material glitchMaterial; // Material shader glitch
 
-    private Vector3[] originalScales; // Untuk menyimpan skala awal gambar relatif terhadap planet
-    private Material[] originalMaterials; // Untuk menyimpan material asli dari gambar
+    private Vector3 originalScale;
+    private Material originalMaterial;
+
+    public AudioSource audioSource; // AudioSource dari planet
+    public AudioClip glitchSound;   // Sound effect glitch (MP3)
 
     void Start()
     {
-        // Sembunyikan semua gambar di awal dan simpan skala awal relatif terhadap planet
-        originalScales = new Vector3[infoImages.Length];
-        originalMaterials = new Material[infoImages.Length];
+        originalScale = infoImage.transform.localScale / transform.localScale.x;
+        infoImage.SetActive(false);
 
-        for (int i = 0; i < infoImages.Length; i++)
+        Image imgComponent = infoImage.GetComponent<Image>();
+        if (imgComponent != null)
         {
-            originalScales[i] = infoImages[i].transform.localScale / transform.localScale.x;
-            infoImages[i].SetActive(false);
-
-            // Simpan material asli dari UI Image
-            Image imgComponent = infoImages[i].GetComponent<Image>();
-            if (imgComponent != null)
-            {
-                originalMaterials[i] = imgComponent.material;
-            }
+            originalMaterial = imgComponent.material;
         }
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1)) // Klik kanan untuk menampilkan gambar
+        if (Input.GetMouseButtonDown(1))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.gameObject == gameObject) // Jika yang diklik adalah planet ini
+                if (hit.collider.gameObject == gameObject)
                 {
-                    ToggleImages();
+                    ToggleImage();
                 }
             }
         }
 
-        // Update skala gambar mengikuti skala planet
         UpdateImageScale();
     }
 
-    void ToggleImages()
+    void ToggleImage()
     {
-        isImagesVisible = !isImagesVisible; // Ubah status tampilan
+        isImageVisible = !isImageVisible;
 
-        for (int i = 0; i < infoImages.Length; i++)
+        if (isImageVisible)
         {
-            if (isImagesVisible)
-            {
-                infoImages[i].SetActive(true);
-                StartCoroutine(ApplyGlitchEffect(infoImages[i], true)); // Efek glitch saat gambar muncul
-            }
-            else
-            {
-                StartCoroutine(ApplyGlitchEffect(infoImages[i], false)); // Efek glitch saat gambar hilang
-            }
+            infoImage.SetActive(true);
+            StartCoroutine(ApplyGlitchEffect(infoImage, true));
+        }
+        else
+        {
+            StartCoroutine(ApplyGlitchEffect(infoImage, false));
         }
     }
 
     void UpdateImageScale()
     {
-        for (int i = 0; i < infoImages.Length; i++)
-        {
-            Vector3 newScale = originalScales[i] * transform.localScale.x;
+        Vector3 newScale = originalScale * transform.localScale.x;
+        Vector3 maxImageScale = new Vector3(19.2f, 10.60774f, 10.60774f);
 
-            // Batasi ukuran maksimal gambar
-            Vector3 maxImageScale = new Vector3(19.2f, 10.60774f, 10.60774f);
-            newScale.x = Mathf.Min(newScale.x, maxImageScale.x);
-            newScale.y = Mathf.Min(newScale.y, maxImageScale.y);
-            newScale.z = Mathf.Min(newScale.z, maxImageScale.z);
+        newScale.x = Mathf.Min(newScale.x, maxImageScale.x);
+        newScale.y = Mathf.Min(newScale.y, maxImageScale.y);
+        newScale.z = Mathf.Min(newScale.z, maxImageScale.z);
 
-            infoImages[i].transform.localScale = newScale;
-        }
+        infoImage.transform.localScale = newScale;
     }
 
     IEnumerator ApplyGlitchEffect(GameObject imgObj, bool isAppearing)
@@ -91,34 +78,47 @@ public class PlanetInfo : MonoBehaviour
         Image imgComponent = imgObj.GetComponent<Image>();
         if (imgComponent == null) yield break;
 
-        // Terapkan material glitch ke gambar
         imgComponent.material = glitchMaterial;
 
+        if (audioSource != null && glitchSound != null)
+        {
+            audioSource.PlayOneShot(glitchSound);
+        }
+
         float elapsedTime = 0f;
-        float duration = 0.3f; // Efek glitch berlangsung selama 0.3 detik
+        float duration = 0.3f;
 
         while (elapsedTime < duration)
         {
-            // Acak intensitas glitch setiap frame untuk animasi dinamis
             float randomIntensity = Random.Range(0.001f, 0.015f);
             glitchMaterial.SetFloat("_GlitchIntensity", randomIntensity);
 
             elapsedTime += Time.deltaTime;
-            yield return null; // Tunggu frame berikutnya
+            yield return null;
         }
 
-        // Set glitch intensity ke 0 sebelum kembali ke material asli
-        glitchMaterial.SetFloat("_GlitchIntensity", 0);
-
-        yield return new WaitForSeconds(0.1f); // Tunggu sebentar agar glitch 0 terlihat
-
-        // Kembalikan material asli setelah glitch selesai
-        imgComponent.material = originalMaterials[System.Array.IndexOf(infoImages, imgObj)];
+        glitchMaterial.SetFloat("_GlitchIntensity", 0f); // Paksa glitch jadi 0 saat selesai
+        imgComponent.material = originalMaterial;
 
         if (!isAppearing)
         {
-            yield return new WaitForSeconds(0.1f); // Tunggu sebentar sebelum menonaktifkan gambar
+            yield return new WaitForSeconds(0.1f);
             imgObj.SetActive(false);
+        }
+
+        // Paksa hentikan suara jika masih berjalan
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+
+    public void ForceHideInfoImage()
+    {
+        if (isImageVisible)
+        {
+            isImageVisible = false;
+            infoImage.SetActive(false);
         }
     }
 }
