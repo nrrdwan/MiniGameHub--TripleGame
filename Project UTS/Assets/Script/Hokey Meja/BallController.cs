@@ -35,18 +35,16 @@ public class BallController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D coll)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        audio.PlayOneShot(hitSound);
-        if (coll.gameObject.name == "TepiKanan")
+        if (other.gameObject.name == "TepiKanan")
         {
             scoreP1 += 1;
             TampilkanScore();
             if (scoreP1 == 10)
             {
                 panelSelesai.SetActive(true);
-                txPemenang =
-GameObject.Find("Pemenang").GetComponent<Text>();
+                txPemenang = GameObject.Find("Pemenang").GetComponent<Text>();
                 txPemenang.text = "Player Biru Pemenang!";
                 Destroy(gameObject);
                 return;
@@ -55,15 +53,15 @@ GameObject.Find("Pemenang").GetComponent<Text>();
             Vector2 arah = new Vector2(2, 0).normalized;
             rigid.AddForce(arah * force);
         }
-        if (coll.gameObject.name == "TepiKiri")
+
+        if (other.gameObject.name == "TepiKiri")
         {
             scoreP2 += 1;
             TampilkanScore();
             if (scoreP2 == 10)
             {
                 panelSelesai.SetActive(true);
-                txPemenang =
-GameObject.Find("Pemenang").GetComponent<Text>();
+                txPemenang = GameObject.Find("Pemenang").GetComponent<Text>();
                 txPemenang.text = "Player Merah Pemenang!";
                 Destroy(gameObject);
                 return;
@@ -71,15 +69,6 @@ GameObject.Find("Pemenang").GetComponent<Text>();
             ResetBall();
             Vector2 arah = new Vector2(-2, 0).normalized;
             rigid.AddForce(arah * force);
-        }
-        if (coll.gameObject.name == "Pemukul1" || coll.gameObject.name ==
-"Pemukul2")
-        {
-            float sudut = (transform.position.y -
-coll.transform.position.y) * 5f;
-            Vector2 arah = new Vector2(rigid.velocity.x, sudut).normalized;
-            rigid.velocity = new Vector2(0, 0);
-            rigid.AddForce(arah * force * 2);
         }
     }
 
