@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hokey Meja.unity
     guid: 90bf5cbbef5953e489cb86abfd89d8ca
+  - enabled: 1
+    path: Assets/Scenes/Pengenalan Planet.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Menu Game 2.unity
+    guid: 4d3436e4b5469c14caeecb415569659b
   m_configObjects: {}
