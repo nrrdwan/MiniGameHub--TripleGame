@@ -4,16 +4,24 @@ using System.Collections;
 
 public class PlanetInfo : MonoBehaviour
 {
-    public GameObject infoImage; // Satu gambar saja
-    private bool isImageVisible = false; // Status apakah gambar ditampilkan
-    public PlanetController planetController; // Referensi ke PlanetController
-    public Material glitchMaterial; // Material shader glitch
+    public GameObject infoImage;
+    private bool isImageVisible = false;
+    public PlanetController planetController;
+    public Material glitchMaterial;
 
     private Vector3 originalScale;
     private Material originalMaterial;
 
-    public AudioSource audioSource; // AudioSource dari planet
-    public AudioClip glitchSound;   // Sound effect glitch (MP3)
+    public AudioSource audioSource;
+    public AudioClip glitchSound;
+
+    public AudioClip[] descriptionSounds;
+    private int currentDescriptionIndex = 0;
+
+    private float lastClickTime = 0f;
+    private float doubleClickThreshold = 0.3f;
+
+    private bool isClosing = false; // Untuk mencegah play suara saat sedang close
 
     void Start()
     {
@@ -31,34 +39,41 @@ public class PlanetInfo : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            float currentTime = Time.time;
 
-            if (Physics.Raycast(ray, out hit))
+            if (currentTime - lastClickTime < doubleClickThreshold)
             {
-                if (hit.collider.gameObject == gameObject)
+                // Klik dua kali - Tutup deskripsi + glitch
+                if (isImageVisible)
                 {
-                    ToggleImage();
+                    isClosing = true;
+                    audioSource.Stop(); // Stop semua suara aktif
+                    StartCoroutine(ApplyGlitchEffect(infoImage, false));
+                    isImageVisible = false;
                 }
             }
+            else
+            {
+                if (!isImageVisible)
+                {
+                    // Buka pertama kali - glitch + play suara pertama
+                    isClosing = false;
+                    isImageVisible = true;
+                    infoImage.SetActive(true);
+                    StartCoroutine(ApplyGlitchEffect(infoImage, true));
+                }
+                else
+                {
+                    // Ganti suara (tanpa glitch)
+                    isClosing = false;
+                    PlayDescriptionSound();
+                }
+            }
+
+            lastClickTime = currentTime;
         }
 
         UpdateImageScale();
-    }
-
-    void ToggleImage()
-    {
-        isImageVisible = !isImageVisible;
-
-        if (isImageVisible)
-        {
-            infoImage.SetActive(true);
-            StartCoroutine(ApplyGlitchEffect(infoImage, true));
-        }
-        else
-        {
-            StartCoroutine(ApplyGlitchEffect(infoImage, false));
-        }
     }
 
     void UpdateImageScale()
@@ -97,7 +112,7 @@ public class PlanetInfo : MonoBehaviour
             yield return null;
         }
 
-        glitchMaterial.SetFloat("_GlitchIntensity", 0f); // Paksa glitch jadi 0 saat selesai
+        glitchMaterial.SetFloat("_GlitchIntensity", 0f);
         imgComponent.material = originalMaterial;
 
         if (!isAppearing)
@@ -106,11 +121,27 @@ public class PlanetInfo : MonoBehaviour
             imgObj.SetActive(false);
         }
 
-        // Paksa hentikan suara jika masih berjalan
-        if (audioSource.isPlaying)
+        if (isAppearing && descriptionSounds.Length > 0 && !isClosing)
+        {
+            yield return new WaitForSeconds(glitchSound.length);
+            PlayDescriptionSound();
+        }
+
+        if (audioSource.isPlaying && !isAppearing)
         {
             audioSource.Stop();
         }
+    }
+
+    void PlayDescriptionSound()
+    {
+        if (descriptionSounds.Length == 0 || audioSource == null) return;
+
+        audioSource.Stop();
+        audioSource.clip = descriptionSounds[currentDescriptionIndex];
+        audioSource.Play();
+
+        currentDescriptionIndex = (currentDescriptionIndex + 1) % descriptionSounds.Length;
     }
 
     public void ForceHideInfoImage()
