@@ -853,6 +853,7 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 269707128}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds: []
 --- !u!114 &269707130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,6 +1529,7 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 400834612}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds: []
 --- !u!114 &400834614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,7 +1629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81e24bb8619929842876eae9787cb34b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7550cab5bfd452e419c1a670a894fc5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2296,6 +2298,10 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 586767184}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds:
+  - {fileID: 8300000, guid: 585595649d9c2214b894d0bbac459db7, type: 3}
+  - {fileID: 8300000, guid: ec581d5b089a1704d8ae521c87acbf5f, type: 3}
+  - {fileID: 8300000, guid: c6fbce550fdf1ff418b9d6aa921f25fe, type: 3}
 --- !u!114 &586767186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3016,6 +3022,10 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 842110160}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds:
+  - {fileID: 8300000, guid: b98dfb1a00071154383df6ee193d5604, type: 3}
+  - {fileID: 8300000, guid: 1f1d7b22bc73d654c9101ba4d9d02f35, type: 3}
+  - {fileID: 8300000, guid: 0985c2481b7a2334a9995cf52c8d64d9, type: 3}
 --- !u!114 &842110162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,6 +3337,10 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 909296062}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds:
+  - {fileID: 8300000, guid: d8381079b56470544b72c1b442e29cb0, type: 3}
+  - {fileID: 8300000, guid: 0d0e4571bd0cfc24dacbbae6b35d5530, type: 3}
+  - {fileID: 8300000, guid: 8fa9bea0247d98b45aa54e17d7b431f9, type: 3}
 --- !u!114 &909296064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3887,6 +3901,7 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 1080251425}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds: []
 --- !u!82 &1080251425
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4294,6 +4309,10 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 1159936594}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds:
+  - {fileID: 8300000, guid: 91240f9d1d88a93408de964bd5657051, type: 3}
+  - {fileID: 8300000, guid: 7febdce75b5eff14fbe1d154ee07f820, type: 3}
+  - {fileID: 8300000, guid: 1eba933458f734b44a45a81821d9e825, type: 3}
 --- !u!114 &1159936596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4712,6 +4731,7 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 1312907044}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds: []
 --- !u!114 &1312907046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5108,6 +5128,10 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 1377521944}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds:
+  - {fileID: 8300000, guid: ed3b3820f00cadc41b3769fa0fccc973, type: 3}
+  - {fileID: 8300000, guid: 39c6f5e96fd2d9a40aa3561a2a8a8c3f, type: 3}
+  - {fileID: 8300000, guid: 79daccdc658130248a0485fe10856503, type: 3}
 --- !u!114 &1377521946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5915,6 +5939,10 @@ MonoBehaviour:
   glitchMaterial: {fileID: 2100000, guid: 1500d9bb6d0215846a9ab1bbbaec6176, type: 2}
   audioSource: {fileID: 1841624265}
   glitchSound: {fileID: 8300000, guid: 95885ef2b10a59a4e8453d9a54cfc904, type: 3}
+  descriptionSounds:
+  - {fileID: 8300000, guid: 7c76f36695aab644eaf0a2799c6e7efb, type: 3}
+  - {fileID: 8300000, guid: 4b82c17c0b6ab3a479e6c73c43b22ac8, type: 3}
+  - {fileID: 8300000, guid: b923571bc3b75214c9c74badd92bb7aa, type: 3}
 --- !u!114 &1841624267
 MonoBehaviour:
   m_ObjectHideFlags: 0
