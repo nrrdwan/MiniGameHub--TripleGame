@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 1891095930}
   - component: {fileID: 1891095929}
   - component: {fileID: 1891095928}
+  - component: {fileID: 1891095931}
   m_Layer: 5
   m_Name: btnMulai
   m_TagString: Untagged
@@ -641,19 +642,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1891095929}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 221151864}
-        m_TargetAssemblyTypeName: HalamanManager, Assembly-CSharp
-        m_MethodName: MulaiPermainan
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1891095929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +681,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891095926}
   m_CullTransparentMesh: 1
+--- !u!114 &1891095931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891095926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e360387a61d2fe4883785482fd0182e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Pengenalan Planet
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
