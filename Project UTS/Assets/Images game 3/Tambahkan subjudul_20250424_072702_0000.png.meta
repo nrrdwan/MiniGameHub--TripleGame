@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: c6af0b8cce71849419c6cc72df1f356c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 435
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_0
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 2319
+        width: 412
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764b428abaa33b0468292851af603964
+      internalID: 1639247524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_1
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 2325
+        width: 565
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24e12c908763c64d84677c655dbf8a7
+      internalID: -1136153886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_2
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 2320
+        width: 507
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d327b8dfdd2f15c4b988c1ba46f74fef
+      internalID: -1796917561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_3
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 2320
+        width: 442
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ea545786d1b614891b48c7089a700b
+      internalID: 27525168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot1
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2200
+        width: 603
+        height: 725
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fce01066eee3ae4698e71cd934a1460
+      internalID: -1143252916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot2
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 2187
+        width: 674
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f44d5d1d28ea7439a20bed46106c89
+      internalID: 1199859888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot3
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 2215
+        width: 556
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c6838bacea4f246a493f7abfaaf860
+      internalID: 1114964739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot4
+      rect:
+        serializedVersion: 2
+        x: 5090
+        y: 2243
+        width: 557
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6195d1ae0929a364b90e19466cc4c095
+      internalID: 1170299279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1680
+        width: 442
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eab78c132fd5b4f896aaa26709d168
+      internalID: -1804897362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_9
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1716
+        width: 412
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ac2674841aaa64880b72ba0943a4d6
+      internalID: -999700452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_10
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1681
+        width: 498
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55815ac5dfe68ff4c82a951ccd5f8f04
+      internalID: 450080300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_11
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1680
+        width: 536
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c4c4f8a4bb4cb4699b6cbd6491a0ad
+      internalID: 673430915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot6
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 1376
+        width: 690
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fe43c702ec35648b19d2b9a5805da8
+      internalID: 1606447473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien7
+      rect:
+        serializedVersion: 2
+        x: 3978
+        y: 465
+        width: 963
+        height: 1259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd33eb5f9facc7b4ab4967991f49e736
+      internalID: 1618033822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot5
+      rect:
+        serializedVersion: 2
+        x: 5082
+        y: 1370
+        width: 571
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72cec2539937714391c67ac17536122
+      internalID: -2137561807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_15
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1042
+        width: 483
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837d2b24f8fbfa24689d48e1ed875482
+      internalID: -1235180841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_16
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1039
+        width: 524
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ed385381b6dd24aaacfd183e5e57cc
+      internalID: 956521436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_17
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1543
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b087f4de95a704e489473708ec8125ae
+      internalID: -1638415424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1039
+        width: 453
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538dce3cf0da11442922a6c7b6992571
+      internalID: -220502705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_19
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 1039
+        width: 547
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422d89ac135d732428d847a390583770
+      internalID: 407206862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_20
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 423
+        width: 468
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32af4d2939033249bbe4911dff809c5
+      internalID: -104274411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_21
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 427
+        width: 442
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c77c9f8ef132444eb65c91c67e302c8
+      internalID: -753512245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot10
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 426
+        width: 433
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f310cc34ed491434db46d8f1306b025f
+      internalID: -2090992601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_23
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 352
+        width: 530
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e24646fc63e3c14597bb32ab2e3918f
+      internalID: 366979330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot8
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 461
+        width: 737
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e59759e80a45c442a375713f8e22dc5
+      internalID: -942839344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astronot9
+      rect:
+        serializedVersion: 2
+        x: 5070
+        y: 468
+        width: 586
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09621da54b58f3e468b91df31e7fe063
+      internalID: 1916105227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tambahkan subjudul_20250424_072702_0000_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 266
+        width: 2853
+        height: 3104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9648153ea7d9884eaff6840812885f9
+      internalID: -1435628433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b5f7d9671a85e394092915d3b13a74e8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tambahkan subjudul_20250424_072702_0000_0: 1639247524
+      Tambahkan subjudul_20250424_072702_0000_1: -1136153886
+      Tambahkan subjudul_20250424_072702_0000_10: 450080300
+      Tambahkan subjudul_20250424_072702_0000_11: 673430915
+      Tambahkan subjudul_20250424_072702_0000_15: -1235180841
+      Tambahkan subjudul_20250424_072702_0000_16: 956521436
+      Tambahkan subjudul_20250424_072702_0000_17: -1638415424
+      Tambahkan subjudul_20250424_072702_0000_19: 407206862
+      Tambahkan subjudul_20250424_072702_0000_2: -1796917561
+      Tambahkan subjudul_20250424_072702_0000_20: -104274411
+      Tambahkan subjudul_20250424_072702_0000_21: -753512245
+      Tambahkan subjudul_20250424_072702_0000_23: 366979330
+      Tambahkan subjudul_20250424_072702_0000_3: 27525168
+      Tambahkan subjudul_20250424_072702_0000_4: -1435628433
+      Tambahkan subjudul_20250424_072702_0000_8: -1804897362
+      Tambahkan subjudul_20250424_072702_0000_9: -999700452
+      alien7: 1618033822
+      astronot: -220502705
+      astronot1: -1143252916
+      astronot10: -2090992601
+      astronot2: 1199859888
+      astronot3: 1114964739
+      astronot4: 1170299279
+      astronot5: -2137561807
+      astronot6: 1606447473
+      astronot8: -942839344
+      astronot9: 1916105227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
