@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_0
+      name: ASTRONOT1
       rect:
         serializedVersion: 2
         x: 544
@@ -118,7 +118,7 @@ TextureImporter:
         width: 412
         height: 571
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_1
+      name: ASTRONOT2
       rect:
         serializedVersion: 2
         x: 1106
@@ -139,7 +139,7 @@ TextureImporter:
         width: 565
         height: 562
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_2
+      name: ASTRONOT3
       rect:
         serializedVersion: 2
         x: 1774
@@ -160,7 +160,7 @@ TextureImporter:
         width: 507
         height: 567
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_3
+      name: ASTRONOT4
       rect:
         serializedVersion: 2
         x: 2430
@@ -181,7 +181,7 @@ TextureImporter:
         width: 442
         height: 566
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,7 +202,7 @@ TextureImporter:
         width: 603
         height: 725
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,7 +223,7 @@ TextureImporter:
         width: 674
         height: 732
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,7 +244,7 @@ TextureImporter:
         width: 556
         height: 698
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
         width: 557
         height: 687
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_8
+      name: ASTRONOT5
       rect:
         serializedVersion: 2
         x: 535
@@ -286,7 +286,7 @@ TextureImporter:
         width: 442
         height: 571
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_9
+      name: ASTRONOT6
       rect:
         serializedVersion: 2
         x: 1189
@@ -307,7 +307,7 @@ TextureImporter:
         width: 412
         height: 535
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_10
+      name: ASTRONOT7
       rect:
         serializedVersion: 2
         x: 1786
@@ -328,7 +328,7 @@ TextureImporter:
         width: 498
         height: 559
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_11
+      name: ASTRONOT8
       rect:
         serializedVersion: 2
         x: 2389
@@ -349,7 +349,7 @@ TextureImporter:
         width: 536
         height: 566
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,7 +370,7 @@ TextureImporter:
         width: 690
         height: 752
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,7 +391,7 @@ TextureImporter:
         width: 963
         height: 1259
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,7 +412,7 @@ TextureImporter:
         width: 571
         height: 834
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_15
+      name: ASTRONOT9
       rect:
         serializedVersion: 2
         x: 517
@@ -433,7 +433,7 @@ TextureImporter:
         width: 483
         height: 570
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tambahkan subjudul_20250424_072702_0000_16
+      name: ASTRONOT10
       rect:
         serializedVersion: 2
         x: 1127
@@ -454,7 +454,7 @@ TextureImporter:
         width: 524
         height: 553
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -475,7 +475,7 @@ TextureImporter:
         width: 70
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,7 +496,7 @@ TextureImporter:
         width: 453
         height: 571
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,7 +517,7 @@ TextureImporter:
         width: 547
         height: 567
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -538,7 +538,7 @@ TextureImporter:
         width: 468
         height: 573
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -559,7 +559,7 @@ TextureImporter:
         width: 442
         height: 565
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -580,7 +580,7 @@ TextureImporter:
         width: 433
         height: 570
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -601,7 +601,7 @@ TextureImporter:
         width: 530
         height: 635
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -622,7 +622,7 @@ TextureImporter:
         width: 737
         height: 817
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -643,7 +643,7 @@ TextureImporter:
         width: 586
         height: 863
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -664,7 +664,7 @@ TextureImporter:
         width: 2853
         height: 3104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -687,22 +687,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tambahkan subjudul_20250424_072702_0000_0: 1639247524
-      Tambahkan subjudul_20250424_072702_0000_1: -1136153886
-      Tambahkan subjudul_20250424_072702_0000_10: 450080300
-      Tambahkan subjudul_20250424_072702_0000_11: 673430915
-      Tambahkan subjudul_20250424_072702_0000_15: -1235180841
-      Tambahkan subjudul_20250424_072702_0000_16: 956521436
+      ASTRONOT1: 1639247524
+      ASTRONOT10: 956521436
+      ASTRONOT2: -1136153886
+      ASTRONOT3: -1796917561
+      ASTRONOT4: 27525168
+      ASTRONOT5: -1804897362
+      ASTRONOT6: -999700452
+      ASTRONOT7: 450080300
+      ASTRONOT8: 673430915
+      ASTRONOT9: -1235180841
       Tambahkan subjudul_20250424_072702_0000_17: -1638415424
       Tambahkan subjudul_20250424_072702_0000_19: 407206862
-      Tambahkan subjudul_20250424_072702_0000_2: -1796917561
       Tambahkan subjudul_20250424_072702_0000_20: -104274411
       Tambahkan subjudul_20250424_072702_0000_21: -753512245
       Tambahkan subjudul_20250424_072702_0000_23: 366979330
-      Tambahkan subjudul_20250424_072702_0000_3: 27525168
       Tambahkan subjudul_20250424_072702_0000_4: -1435628433
-      Tambahkan subjudul_20250424_072702_0000_8: -1804897362
-      Tambahkan subjudul_20250424_072702_0000_9: -999700452
       alien7: 1618033822
       astronot: -220502705
       astronot1: -1143252916
