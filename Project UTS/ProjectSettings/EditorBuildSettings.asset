@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Loading Menu Awal fix.unity
+    guid: afa58918ef7a91c488dded6bf6acb5d8
+  - enabled: 1
     path: Assets/Scenes/Menu Game 1.unity
     guid: d34335ed059f0b74381c7aa771771553
   - enabled: 1
@@ -13,7 +16,7 @@ EditorBuildSettings:
     guid: 90bf5cbbef5953e489cb86abfd89d8ca
   - enabled: 1
     path: Assets/Scenes/Menu Awal.unity
-    guid: 44cdbccaa78985a4fbf1d1e38aa97f79
+    guid: c66d055ed483bf04da96cdb285babf2c
   - enabled: 1
     path: Assets/Scenes/Menu Game 2.unity
     guid: 4d3436e4b5469c14caeecb415569659b
@@ -36,6 +39,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading Game 1.unity
     guid: b98af178572f71a4fb7f5ec7369b73e4
   - enabled: 1
-    path: Assets/Scenes/MenuPilihGame.unity
+    path: Assets/Scenes/Menu Pilih Game.unity
     guid: 8f6dd3c55aed8724b8857f86b25c221e
   m_configObjects: {}
