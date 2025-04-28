@@ -151,7 +151,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 97092979}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d0db5b65b1b3ac041a2652f6f34f73f1, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -174,7 +174,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13420963, y: 0.08921957}
+  m_Offset: {x: 0.13420963, y: 0.00071179867}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -185,7 +185,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3242173, y: 5.8657036}
+  m_Size: {x: 3.3242173, y: 6.485256}
   m_EdgeRadius: 0
 --- !u!212 &97092982
 SpriteRenderer:
@@ -248,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 97092979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6, y: 0.16, z: 0}
+  m_LocalPosition: {x: -6.27, y: 0.16, z: 0}
   m_LocalScale: {x: 0.32126302, y: 0.3382888, z: 0.19470486}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   batasAtas: 2.78
   batasBawah: -2.78
-  batasKiri: -7.5
+  batasKiri: -6.27
   batasKanan: -0.96
   kecepatan: 50
   axisVertikal: vertical1
@@ -1316,7 +1316,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1341849989}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d0db5b65b1b3ac041a2652f6f34f73f1, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2286,9 +2286,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00000008940697, y: 0}
   serializedVersion: 2
-  m_Radius: 0.32
+  m_Radius: 0.33561411
 --- !u!50 &1935141074
 Rigidbody2D:
   serializedVersion: 4
@@ -2395,7 +2395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698ad5244197939449bf7bea240a05eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 500
+  force: 600
   hitSound: {fileID: 8300000, guid: 4a9e49be7d7bd774db3f6ddf695acd34, type: 3}
 --- !u!82 &1935141078
 AudioSource:
