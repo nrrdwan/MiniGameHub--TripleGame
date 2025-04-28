@@ -5,21 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class BatasAkhirsampah : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Tidak ada inisialisasi khusus
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Tidak ada logika per frame saat ini
-    }
+    public int nyawa = 3; // jumlah nyawa awal
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
-        SceneManager.LoadScene("Gameover");
+        Destroy(collision.gameObject); // Hapus sampah yang menabrak
+
+        nyawa--; // Kurangi nyawa 1
+
+        if (nyawa <= 0)
+        {
+            // Kalau nyawa habis, pindah ke scene Gameover
+            SceneManager.LoadScene("Gameover");
+        }
     }
 }
