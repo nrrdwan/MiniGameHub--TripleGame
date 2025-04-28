@@ -18,6 +18,7 @@ public class BallController : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        rigid.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         Vector2 arah = new Vector2(2, 0).normalized;
         rigid.AddForce(arah * force);
         scoreP1 = 0;
