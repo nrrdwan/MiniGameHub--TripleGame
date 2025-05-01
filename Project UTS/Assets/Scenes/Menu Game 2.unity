@@ -242,6 +242,11 @@ MonoBehaviour:
   - button: {fileID: 1106032787}
     sceneAsset: {fileID: 102900000, guid: 90bf5cbbef5953e489cb86abfd89d8ca, type: 3}
     sceneName: 
+  - button: {fileID: 1637377186}
+    sceneAsset: {fileID: 102900000, guid: bfdfa4695b16a39429c804f57974fe92, type: 3}
+    sceneName: 
+  fadePanel: {fileID: 0}
+  fadeDuration: 1
 --- !u!1 &468896474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
+  fadePanel: {fileID: 0}
+  fadeDuration: 1
 --- !u!1 &2095592691
 GameObject:
   m_ObjectHideFlags: 0
