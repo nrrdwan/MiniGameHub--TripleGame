@@ -1,22 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BatasAkhirsampah : MonoBehaviour
 {
-    public int nyawa = 3; // jumlah nyawa awal
-
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject); // Hapus sampah yang menabrak
+        Destroy(collision.gameObject);    // Hapus objek yang menabrak
 
-        nyawa--; // Kurangi nyawa 1
+        // Mengurangi nyawa yang ada di UINyawa
+        UINyawa.nyawaTersisa--;           // Nyawa berkurang 1
 
-        if (nyawa <= 0)
+        // Cek apakah nyawa habis
+        if (UINyawa.nyawaTersisa <= 0)
         {
-            // Kalau nyawa habis, pindah ke scene Gameover
-            SceneManager.LoadScene("Gameover");
+            SceneManager.LoadScene("Gameover");  // Pindah ke scene Gameover
         }
     }
 }
