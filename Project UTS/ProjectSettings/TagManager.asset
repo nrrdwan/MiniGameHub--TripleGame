@@ -8,6 +8,9 @@ TagManager:
   - Organik
   - alien
   - astronot
+  - WinDisplay
+  - Ball
+  - Paddle
   layers:
   - Default
   - TransparentFX
