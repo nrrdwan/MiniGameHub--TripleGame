@@ -1,20 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; // Kalau mau reload scene saat Game Over
 
-public class GameOver : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    float timer = 0f;
+    public static GameManager instance; // Supaya bisa dipanggil dari mana saja
+    public int nyawa = 3;
 
-    void Update()
+    private void Awake()
     {
-        timer += Time.deltaTime;
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject); // pastikan hanya 1 GameManager
+    }
 
-        if (timer > 2f)
+    public void KurangiNyawa()
+    {
+        nyawa--;
+
+        if (nyawa <= 0)
         {
-            Data.score = 0;
-            SceneManager.LoadScene("Gameplay");
+            GameOver();
         }
+    }
+
+    void GameOver()
+    {
+        Debug.Log("Game Over!");
+        // Contoh: reload scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
