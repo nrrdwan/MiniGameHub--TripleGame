@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons:
   - button: {fileID: 1106032787}
-    sceneAsset: {fileID: 102900000, guid: 90bf5cbbef5953e489cb86abfd89d8ca, type: 3}
+    sceneAsset: {fileID: 102900000, guid: 2cdd47e069f660647bbb2e0d86fc2880, type: 3}
     sceneName: 
   - button: {fileID: 1841949504}
     sceneAsset: {fileID: 102900000, guid: 8f6dd3c55aed8724b8857f86b25c221e, type: 3}
