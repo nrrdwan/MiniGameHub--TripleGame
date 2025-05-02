@@ -27,6 +27,7 @@ public class BallController : MonoBehaviour
 
     [Header("Sound")]
     public AudioClip paddleHitSound;
+    public AudioClip goalSound;
     private AudioSource audioSource;
 
     void Start()
@@ -192,6 +193,11 @@ public class BallController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (goalSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(goalSound);
+        }
+
         if (other.gameObject.name == "TepiKanan")
         {
             scoreP1++;

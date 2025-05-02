@@ -18,14 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Awal.unity
     guid: c66d055ed483bf04da96cdb285babf2c
   - enabled: 1
-    path: Assets/Scenes/Menu Game 2.unity
+    path: Assets/Scenes/Loading Game 2.unity
     guid: 4d3436e4b5469c14caeecb415569659b
   - enabled: 1
     path: Assets/Scenes/Menu Game 3.unity
-    guid: ea33cb139bf98c04bb367a20994953d4
-  - enabled: 1
-    path: Assets/Scenes/Menu Hokey Meja.unity
-    guid: b9158a62600415147aeabd89baa05567
+    guid: 4ecfcde50c7a1d84eae3b44462b9c9d6
   - enabled: 1
     path: Assets/Scenes/Pengenalan Planet.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -44,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hokey MejaAI.unity
     guid: bfdfa4695b16a39429c804f57974fe92
+  - enabled: 1
+    path: Assets/Scenes/Menu Game 2.unity
+    guid: d23ebd2f422af184fad8179afb5c6295
+  - enabled: 1
+    path: Assets/Scenes/Loading Game 3.unity
+    guid: c08d526f09f587f49836fab71eaa3c58
   m_configObjects: {}
