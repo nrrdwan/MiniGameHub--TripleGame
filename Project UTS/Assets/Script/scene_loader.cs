@@ -11,6 +11,8 @@ public class scene_loader : MonoBehaviour
 {
     public Image loadingfill;
     public float loadingSpeed = 0.5f; // Bisa kamu atur kecepatannya di Inspector
+    public CanvasGroup fadeCanvasGroup; // Tambahkan CanvasGroup untuk efek fade-out
+    public float fadeOutDuration = 0.5f;
 
 #if UNITY_EDITOR
     [SerializeField] private SceneAsset sceneToLoad;
@@ -56,8 +58,23 @@ public class scene_loader : MonoBehaviour
             yield return null;
         }
 
-        // Delay sebelum pindah scene
-        yield return new WaitForSeconds(0.5f);
+        // Loading selesai, sekarang fade-out
+        yield return StartCoroutine(FadeOut());
+
+        // Setelah fade-out selesai, pindah scene
         loading.allowSceneActivation = true;
+    }
+
+    IEnumerator FadeOut()
+    {
+        float time = 0f;
+        fadeCanvasGroup.gameObject.SetActive(true); // Pastikan aktif
+
+        while (time < fadeOutDuration)
+        {
+            time += Time.deltaTime;
+            fadeCanvasGroup.alpha = Mathf.Lerp(0f, 1f, time / fadeOutDuration);
+            yield return null;
+        }
     }
 }
