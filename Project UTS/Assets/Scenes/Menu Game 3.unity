@@ -242,10 +242,10 @@ MonoBehaviour:
   buttons:
   - button: {fileID: 1106032787}
     sceneAsset: {fileID: 102900000, guid: 2cdd47e069f660647bbb2e0d86fc2880, type: 3}
-    sceneName: 
+    sceneName: Gameplay
   - button: {fileID: 1841949504}
     sceneAsset: {fileID: 102900000, guid: 8f6dd3c55aed8724b8857f86b25c221e, type: 3}
-    sceneName: 
+    sceneName: Menu Pilih Game
   fadePanel: {fileID: 2097091573}
   fadeDuration: 1
 --- !u!1 &1106032785
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6000f037506abb447b341750c36f3e3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92c22ed9b54196143b7a5860c1df4016, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DeteksiSampah : MonoBehaviour
 {
@@ -13,38 +14,37 @@ public class DeteksiSampah : MonoBehaviour
     private AudioSource mediaPlayerBenar;
     private AudioSource mediaPlayerSalah;
 
-    // Start is called before the first frame update
+    private int score = 0;
+
     void Start()
     {
-        // Menambahkan AudioSource untuk audioBenar
+        UINyawa.nyawaTersisa = 3;
+
         mediaPlayerBenar = gameObject.AddComponent<AudioSource>();
         mediaPlayerBenar.clip = audioBenar;
 
-        // Menambahkan AudioSource untuk audioSalah
         mediaPlayerSalah = gameObject.AddComponent<AudioSource>();
         mediaPlayerSalah.clip = audioSalah;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // Tidak ada logika dalam Update saat ini
+        score = 0;
+        textScore.text = score.ToString();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(nameTag))
         {
-            Data.score += 25;
-            textScore.text = Data.score.ToString();
+            score += 25;
             mediaPlayerBenar.Play();
         }
         else
         {
-            Data.score -= 5;
-            textScore.text = Data.score.ToString();
+            score -= 5;
             mediaPlayerSalah.Play();
         }
+
+        textScore.text = Mathf.Max(0, score).ToString();
+        PlayerPrefs.SetInt("LastScore", Mathf.Max(0, score));
 
         Destroy(collision.gameObject);
     }

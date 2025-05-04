@@ -405,7 +405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52dc67a475e00234d881ae1bb7a5746e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc9384c31a0471047aea8972860301e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1203,13 +1203,13 @@ MonoBehaviour:
   buttons:
   - button: {fileID: 1219907081}
     sceneAsset: {fileID: 102900000, guid: 90bf5cbbef5953e489cb86abfd89d8ca, type: 3}
-    sceneName: 
+    sceneName: Hokey Meja
   - button: {fileID: 1324156942}
     sceneAsset: {fileID: 102900000, guid: bfdfa4695b16a39429c804f57974fe92, type: 3}
-    sceneName: 
+    sceneName: Hokey MejaAI
   - button: {fileID: 1825903959}
     sceneAsset: {fileID: 102900000, guid: 8f6dd3c55aed8724b8857f86b25c221e, type: 3}
-    sceneName: 
+    sceneName: Menu Pilih Game
   fadePanel: {fileID: 303978617}
   fadeDuration: 1
 --- !u!1 &1997977233

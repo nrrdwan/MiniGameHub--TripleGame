@@ -1127,16 +1127,16 @@ MonoBehaviour:
   buttons:
   - button: {fileID: 1501354376}
     sceneAsset: {fileID: 102900000, guid: b98af178572f71a4fb7f5ec7369b73e4, type: 3}
-    sceneName: 
+    sceneName: Loading Game 1
   - button: {fileID: 657473874}
     sceneAsset: {fileID: 102900000, guid: c66d055ed483bf04da96cdb285babf2c, type: 3}
-    sceneName: 
+    sceneName: Menu Awal
   - button: {fileID: 810464374}
     sceneAsset: {fileID: 102900000, guid: 4d3436e4b5469c14caeecb415569659b, type: 3}
-    sceneName: 
+    sceneName: Loading Game 2
   - button: {fileID: 1082849723}
     sceneAsset: {fileID: 102900000, guid: c08d526f09f587f49836fab71eaa3c58, type: 3}
-    sceneName: 
+    sceneName: Loading Game 3
   fadePanel: {fileID: 659930550}
   fadeDuration: 1
 --- !u!1 &810464372
