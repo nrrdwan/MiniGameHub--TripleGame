@@ -17,16 +17,19 @@ public class PageManager : MonoBehaviour
 #if UNITY_EDITOR
         public SceneAsset sceneAsset;
 #endif
-        [HideInInspector] public string sceneName;
+
+        [Tooltip("Nama scene yang akan dibuka saat di-build. Harus sesuai dengan nama di Build Settings.")]
+        public string sceneName; // Manual input scene name
     }
 
     public SceneButtonPair[] buttons;
-    public CanvasGroup fadePanel; // Fade panel opsional
-    public float fadeDuration = 1f; // <--- Tambahkan ini, durasi dalam detik
+    public CanvasGroup fadePanel;
+    public float fadeDuration = 1f;
 
     void Awake()
     {
 #if UNITY_EDITOR
+        // Isi otomatis saat di Editor
         foreach (var pair in buttons)
         {
             if (pair.sceneAsset != null)
@@ -36,9 +39,17 @@ public class PageManager : MonoBehaviour
         }
 #endif
 
+        // Pastikan sceneName dipakai saat runtime
         foreach (var pair in buttons)
         {
             string sceneToLoad = pair.sceneName;
+
+            if (string.IsNullOrEmpty(sceneToLoad))
+            {
+                Debug.LogWarning("Scene name kosong! Pastikan diisi di Inspector.");
+                continue;
+            }
+
             pair.button.onClick.AddListener(() => StartCoroutine(FadeAndLoadScene(sceneToLoad)));
         }
     }
@@ -48,13 +59,16 @@ public class PageManager : MonoBehaviour
         if (fadePanel != null)
         {
             float t = 0f;
+            fadePanel.gameObject.SetActive(true);
+
             while (t < fadeDuration)
             {
                 t += Time.deltaTime;
-                fadePanel.alpha = t / fadeDuration; // <-- gunakan pembagian supaya fade tepat waktu
+                fadePanel.alpha = t / fadeDuration;
                 yield return null;
             }
-            fadePanel.alpha = 1f; // Pastikan alpha 1 setelah selesai
+
+            fadePanel.alpha = 1f;
         }
 
         SceneManager.LoadScene(sceneName);

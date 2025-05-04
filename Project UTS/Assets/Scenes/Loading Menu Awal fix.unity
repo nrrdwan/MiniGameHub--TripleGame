@@ -177,6 +177,7 @@ MonoBehaviour:
   loadingSpeed: 0.5
   fadeCanvasGroup: {fileID: 1553135870}
   fadeOutDuration: 1
+  sceneNameBuild: Menu Awal
   sceneToLoad: {fileID: 102900000, guid: c66d055ed483bf04da96cdb285babf2c, type: 3}
 --- !u!114 &177211206
 MonoBehaviour:

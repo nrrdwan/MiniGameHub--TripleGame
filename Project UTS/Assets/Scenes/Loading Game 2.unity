@@ -340,6 +340,7 @@ MonoBehaviour:
   loadingSpeed: 0.5
   fadeCanvasGroup: {fileID: 93925005}
   fadeOutDuration: 1
+  sceneNameBuild: Menu Game 2
   sceneToLoad: {fileID: 102900000, guid: d23ebd2f422af184fad8179afb5c6295, type: 3}
 --- !u!114 &205681996
 MonoBehaviour:

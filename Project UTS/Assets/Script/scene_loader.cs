@@ -10,12 +10,14 @@ using UnityEditor;
 public class scene_loader : MonoBehaviour
 {
     public Image loadingfill;
-    public float loadingSpeed = 0.5f; // Bisa kamu atur kecepatannya di Inspector
-    public CanvasGroup fadeCanvasGroup; // Tambahkan CanvasGroup untuk efek fade-out
+    public float loadingSpeed = 0.5f;
+    public CanvasGroup fadeCanvasGroup;
     public float fadeOutDuration = 0.5f;
 
+    [SerializeField] private string sceneNameBuild; // Fallback nama scene untuk runtime (build)
+
 #if UNITY_EDITOR
-    [SerializeField] private SceneAsset sceneToLoad;
+    [SerializeField] private SceneAsset sceneToLoad; // Hanya digunakan di editor
 #endif
 
     private string sceneName;
@@ -27,6 +29,12 @@ public class scene_loader : MonoBehaviour
         {
             sceneName = sceneToLoad.name;
         }
+        else
+        {
+            sceneName = sceneNameBuild;
+        }
+#else
+        sceneName = sceneNameBuild;
 #endif
     }
 
@@ -38,7 +46,7 @@ public class scene_loader : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Scene name is not set!");
+            Debug.LogError("Scene name is not set! Please fill in 'sceneNameBuild' in the inspector.");
         }
     }
 
@@ -53,22 +61,29 @@ public class scene_loader : MonoBehaviour
         {
             float targetProgress = Mathf.Clamp01(loading.progress / 0.9f);
             currentProgress = Mathf.MoveTowards(currentProgress, targetProgress, Time.deltaTime * loadingSpeed);
-            loadingfill.fillAmount = currentProgress;
+
+            if (loadingfill != null)
+                loadingfill.fillAmount = currentProgress;
 
             yield return null;
         }
 
-        // Loading selesai, sekarang fade-out
+        // Fade-out sebelum pindah scene
         yield return StartCoroutine(FadeOut());
 
-        // Setelah fade-out selesai, pindah scene
         loading.allowSceneActivation = true;
     }
 
     IEnumerator FadeOut()
     {
+        if (fadeCanvasGroup == null)
+        {
+            Debug.LogWarning("Fade CanvasGroup is not assigned.");
+            yield break;
+        }
+
         float time = 0f;
-        fadeCanvasGroup.gameObject.SetActive(true); // Pastikan aktif
+        fadeCanvasGroup.gameObject.SetActive(true);
 
         while (time < fadeOutDuration)
         {

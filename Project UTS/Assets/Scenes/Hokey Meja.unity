@@ -479,7 +479,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -657,19 +656,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b8c3627de77a340bd073e9d2b6aa71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEscapeToExit: 1
 --- !u!1 &579024358
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,19 +813,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 732674536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 519420035}
-        m_TargetAssemblyTypeName: HalamanManager, Assembly-CSharp
-        m_MethodName: MulaiPermainan
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &732674536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,8 +1235,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons:
   - button: {fileID: 1886873368}
-    sceneAsset: {fileID: 102900000, guid: 4d3436e4b5469c14caeecb415569659b, type: 3}
-    sceneName: 
+    sceneAsset: {fileID: 102900000, guid: d23ebd2f422af184fad8179afb5c6295, type: 3}
+    sceneName: Menu Game 2
+  - button: {fileID: 732674535}
+    sceneAsset: {fileID: 102900000, guid: 90bf5cbbef5953e489cb86abfd89d8ca, type: 3}
+    sceneName: Hokey Meja
   fadePanel: {fileID: 0}
   fadeDuration: 1
 --- !u!1 &1204478813
@@ -2934,7 +2911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420035}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HalamanManager, Assembly-CSharp
         m_MethodName: KembaliKeMenu
         m_Mode: 1

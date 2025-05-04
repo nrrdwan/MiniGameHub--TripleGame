@@ -203,9 +203,9 @@ public class BallController : MonoBehaviour
             scoreP1++;
             TampilkanScore();
 
-            if (scoreP1 == 10)
+            if (scoreP1 == 5)
             {
-                Debug.Log("Skor P1 mencapai 10 - Alien menang");
+                Debug.Log("Skor P1 mencapai 5 - Alien menang");
                 TampilkanPemenang(true);
                 return;
             }
@@ -218,9 +218,9 @@ public class BallController : MonoBehaviour
             scoreP2++;
             TampilkanScore();
 
-            if (scoreP2 == 10)
+            if (scoreP2 == 5)
             {
-                Debug.Log("Skor P2 mencapai 10 - Astronot menang");
+                Debug.Log("Skor P2 mencapai 5 - Astronot menang");
                 TampilkanPemenang(false);
                 return;
             }
